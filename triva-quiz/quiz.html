@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="quiz.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <h1><a href="../index.html">QUIZ APP</a></h1>
+    </header>
+    <div id="trivialApp">
+        <div>
+            <h2 id="categories"></h2>
+        </div>
+        <div id="questions"></div>
+        <div class="options">
+            <button type="button" class="optionBtns"></button>
+            <button type="button" class="optionBtns"></button>
+            <button type="button" class="optionBtns"></button>
+            <button type="button" class="optionBtns"></button>
+        </div>
+        <button type="button" id="nextBtn">Next</button>
+
+        <div class="pop" id="popup">
+            <div class="popup">
+                    <h2 id="score"></h2>
+                <i class='bx bx-x'  onclick="closePopUp()"></i> 
+            </div>
+            
+            <button type="button" id="restart" onclick="restart()" >Retake Quiz</button>
+        </div>
+    </div>
+
+    <script src="./quiz.js"></script>
+</body>
+</html>

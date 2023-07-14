@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: hsla(207, 79%, 77%, 0.856);
+    background-position: center;
+    background-size: cover;
+}
+
+header{
+    text-align: center;
+    margin: 0.5rem 0;
+    font-style: italic;
+}
+
+header a{
+    text-decoration: none;
+    cursor: pointer;
+    color: hsl(207, 61%, 30%);
+}
+ 
+header a:hover{
+    color: rgba(78, 78, 243, 0.842);
+}
+ 
+#trivialApp{
+    background: hsl(207, 61%, 30%);
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto 20px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#nextBtn{
+    background:hsl(187, 100%, 40%);
+    color: hsl(230, 8%, 15%);
+    width: 50%;
+    height: 40px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    outline: 0;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+#restart{
+    background:hsl(197, 88%, 36%);
+    color: hsl(210, 93%, 95%);
+    width: 50%;
+    height: 40px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    outline: 0;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    visibility: hidden;
+    margin-top: 20px ;
+}
+#nextBtn:hover,
+#restart:hover{
+    color:hsl(187, 100%, 40%);
+    background: hsl(230, 8%, 15%);
+}
+
+#questions{
+    color: hsl(190, 76%, 87%);
+    font-size: 25px;
+    margin:20px auto 20px;
+}
+
+#categories{
+    color: hsl(190, 76%, 87%) ;
+    border-bottom: 1px solid hsl(199, 99%, 55%);;
+    padding-bottom: 20px ;
+    text-transform: uppercase;
+    font-style: oblique;
+}
+
+.optionBtns{
+    width: 100%;
+    height: 50px;
+    margin-bottom:20px ;
+    background: hsla(203, 92%, 19%, 0.699);
+    outline: 0;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    color: hsl(190, 76%, 87%);
+    cursor: pointer;
+}
+
+.optionBtns:hover{
+    background: hsl(208, 100%, 51%);
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    transform: translateY(4px);
+}
+
+.popup{
+    display:flex;
+    justify-content: space-between;
+    position: relative;
+    padding-top:180px;
+}
+
+.popup i{
+   font-size: 45px;
+    color: hsl(230, 8%, 15%);
+    cursor: pointer;
+}
+
+.popup i:hover{
+    color: hsl(208, 100%, 51%);
+}
+.pop{
+    width: 500px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%)scale(0.1);
+    text-align: center;
+    padding: 10px 25px 35px;
+    background:hsl(207, 61%, 30%);
+    background-position: center;
+    background-size: cover;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    height: 100vh;
+    /* display: flex; */
+}
+.open_popUp{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%)scale(1);
+}
+
+#score{
+    color:hsl(210, 93%, 95%);
+}
+
+
+@media screen and (max-width: 450px) {
+    .optionBtns{
+        overflow: hidden;
+        height: 65px;
+    }    
+
+}
